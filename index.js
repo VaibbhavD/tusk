@@ -15,8 +15,18 @@
 //    li[i].style.fontWeight='bold';
 //  }
 
-var seconditem=document.querySelector('.list-group-item:nth-child(2)');
-seconditem.style.backgroundColor='green';
+// var seconditem=document.querySelector('.list-group-item:nth-child(2)');
+// seconditem.style.backgroundColor='green';
 
-var thirditem=document.querySelector('.list-group-item:nth-child(3)');
-thirditem.style.display='none';
+// var thirditem=document.querySelector('.list-group-item:nth-child(3)');
+// thirditem.style.display='none';
+
+var odd=document.querySelectorAll('li:nth-child(odd)')
+for(var i=0;i<odd.length;i++)
+{
+   odd[i].style.backgroundColor='green';
+}
+
+var second=document.querySelectorAll('li')[1];
+second.style.color='green';
+// console.log(second);
