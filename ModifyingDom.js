@@ -1,13 +1,13 @@
 // // parentNode
 const items=document.querySelector('#items')
-console.log(items);
+// console.log(items);
 
-// console.log(items.parentNode);
+console.log(items.parentNode);
 // items.parentNode.style.backgroundColor='pink';
 // console.log(items.parentNode.parentNode.parentNode.parentNode);
 
 // //parentElement
-// console.log(items.parentElement);
+console.log(items.parentElement);
 
 // // chilsNodes
 // console.log(items.childNodes);
@@ -50,7 +50,7 @@ var divtxt=document.createTextNode('Helloe World');
 // text to div
 newdiv.appendChild(divtxt)
 
-console.log(newdiv);
+// console.log(newdiv);
 
 // add before head
 var container=document.querySelector('header .container');
@@ -58,13 +58,16 @@ var h1=document.querySelector('header h1');
 
 container.insertBefore(newdiv,h1);
 
-// add before item 1
+// a
+var subit=document.querySelector('.btn-dark');
+console.log(subit);
+subit.style.backgroundColor='red';
 
-var list=document.querySelector('h2 .title');
-var li  =document.querySelector('div ul');
+// delete event
+var itemlist =document.getElementById('items');
+itemlist.addEventListener('click',removeitem); 
 
-list.insertBefore(newdiv,li);
+// create delete element
+var deletebut=document.createElement('button');
 
-
-
-
+// deletebut.className=
