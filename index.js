@@ -109,6 +109,5 @@ function onSubmit(e){
     li.className = 'list-group-item';
     itemList.appendChild(li);
   }
-
 };
 ;

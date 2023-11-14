@@ -38,5 +38,18 @@
   </div>
   <script src="index.js"></script>
   <script src="ModifyingDom.js"></script>
+  <script type="text/javascript">
+        let myobj={
+        name:'vaibhav',
+        age:23
+    }
+    var myobj_serailized=JSON.stringify(myobj);
+    // console.log(myobj_serailized);
+    localStorage.setItem("myobj",myobj_serailized);
+    console.log(localStorage);
+
+    let myobj_deserailized=JSON.parse(localStorage.getItem("myobj"));
+    console.log(myobj_deserailized);
+  </script>
 </body>
 </html>
